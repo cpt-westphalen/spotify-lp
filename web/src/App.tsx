@@ -1,6 +1,6 @@
 import "./App.css";
-import { TopBar } from "./components/TopBar";
-import { CarouselSection } from "./sections/CarouselSection";
+import { Header } from "./components/Header";
+import { CarouselSection } from "./sections/CarouselSection/CarouselSection";
 import { link } from "./types";
 
 const links: link[] = [
@@ -13,7 +13,7 @@ const links: link[] = [
 function App() {
 	return (
 		<div className='App'>
-			<TopBar links={links} />
+			<Header links={links} />
 			<CarouselSection />
 		</div>
 	);

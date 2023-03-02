@@ -1,4 +1,4 @@
-import spotify from "./assets/spotify.svg";
+import spotify from "../assets/spotify.svg";
 import { link } from "../types";
 
 export const Header = ({ links }: { links: link[] }) => {

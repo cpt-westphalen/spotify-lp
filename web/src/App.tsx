@@ -1,6 +1,9 @@
 import "./App.css";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { CarouselSection } from "./sections/CarouselSection/CarouselSection";
+import { GallerySection } from "./sections/GallerySection/GallerySection";
+import { ShowcaseSection } from "./sections/ShowcaseSection/ShowcaseSection";
 import { link } from "./types";
 
 const links: link[] = [
@@ -12,9 +15,12 @@ const links: link[] = [
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='app'>
 			<Header links={links} />
 			<CarouselSection />
+			<GallerySection />
+			<ShowcaseSection />
+			<Footer />
 		</div>
 	);
 }

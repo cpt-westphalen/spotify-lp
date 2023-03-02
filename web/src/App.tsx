@@ -15,7 +15,7 @@ const links: link[] = [
 
 function App() {
 	return (
-		<div className='grid-container'>
+		<div className='grid-container app'>
 			<Header links={links} />
 			<CarouselSection />
 			<GallerySection />

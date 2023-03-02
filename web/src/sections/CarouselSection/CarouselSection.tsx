@@ -35,6 +35,7 @@ export const CarouselSection = () => {
 				<Carousel
 					autoPlay
 					infiniteLoop
+					showIndicators={false}
 					dynamicHeight={false}
 					ariaLabel='Banner do Site'
 					showThumbs={false}

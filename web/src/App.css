@@ -1,12 +1,12 @@
-.app {
+.grid-container {
 	display: grid;
 	grid-template-columns: 1fr min(1440px, 100%) 1fr;
 }
 
-.app > * {
+.grid-container > * {
 	grid-column: 2;
 }
 
 .full-width {
-	grid-column: -1/1;
+	grid-column: 1/-1;
 }

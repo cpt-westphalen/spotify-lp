@@ -1,0 +1,42 @@
+.header-bg {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.header {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header > *:first-child {
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header .logo {
+    max-height: 4.5rem;
+}
+
+.header-links {
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.header-links > a, .header-links-separator {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px transparent;
+    transition: text-shadow 120ms ease-in-out;
+}
+
+.header-links > a:hover {
+    text-shadow: 0px 0px 6px rgba(230,230,230,0.4);
+}

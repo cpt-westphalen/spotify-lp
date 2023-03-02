@@ -1,4 +1,4 @@
-import spotify from "../assets/spotify.svg";
+import spotify from "../../assets/spotify.svg";
 
 export const Footer = () => {
 	return (

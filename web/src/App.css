@@ -1,6 +1,6 @@
 .grid-container {
 	display: grid;
-	grid-template-columns: 1fr min(1440px, 100%) 1fr;
+	grid-template-columns: 1fr min(1440px, 96%) 1fr;
 }
 
 .grid-container > * {
@@ -8,5 +8,5 @@
 }
 
 .full-width {
-	grid-column: 1/-1;
+	grid-column: -1/1;
 }

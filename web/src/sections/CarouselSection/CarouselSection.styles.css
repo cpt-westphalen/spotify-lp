@@ -1,13 +1,18 @@
-.carousel-section-bg{
-    background-image: linear-gradient(90deg, var(--light-highlight),var(--dark-highlight));
+.carousel-section-bg {
+    background-image: url('../../assets/capa.png'), linear-gradient(90deg, var(--light-highlight), var(--dark-highlight));
+    background-repeat: repeat;
+    background-blend-mode: soft-light, normal;
 }
 
 .carousel-container {
+    box-sizing: border-box;
+    padding: 0 4rem;
+    min-height: max(640px, 100vh);
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 640px;
 }
 
 .carousel-container section {
@@ -24,4 +29,37 @@
     font-weight: 800;
     line-height: 3rem;
     letter-spacing: -2px;
+}
+
+.carousel-arrow {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--primary-background);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: filter 150ms ease, opacity 100ms ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-arrow.next {
+    right: max(8%, 1rem);
+}
+
+.carousel-arrow.prev {
+    left: max(8%, 1rem);
+}
+
+.carousel-arrow > *:first-child {
+    filter: drop-shadow(0 0 6px rgba(0,0,0,0.2))
+}
+
+.carousel-arrow:hover {
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.5));
+}
+
+.carousel-arrow:active {
+    opacity: .3;
 }

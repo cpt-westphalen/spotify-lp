@@ -1,6 +1,6 @@
 .carousel-section-bg {
-    background-image: url('../../assets/capa.png'), linear-gradient(90deg, var(--light-highlight), var(--dark-highlight));
-    background-color: var(--dark-highlight);
+    background-image: url('../../assets/capa.png'), linear-gradient(90deg, var(--light-highlight), var(--highlight));
+    background-color: var(--highlight);
     background-repeat: repeat;
     background-blend-mode: soft-light, normal;
     overflow: hidden;

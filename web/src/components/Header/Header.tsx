@@ -3,6 +3,7 @@ import "./Header.styles.css";
 import spotify from "../../assets/spotify.svg";
 
 import { link } from "../../types";
+import { Fragment } from "react";
 
 export const Header = ({ links }: { links: link[] }) => {
 	return (
@@ -25,16 +26,12 @@ export const Header = ({ links }: { links: link[] }) => {
 								{link.text}
 							</a>
 						) : (
-							<>
+							<Fragment key={link.text}>
 								<span className='header-links-separator'>
 									{"|"}
 								</span>
-								<a
-									key={link.text}
-									href={link.url}>
-									{link.text}
-								</a>
-							</>
+								<a href={link.url}>{link.text}</a>
+							</Fragment>
 						)
 					)}
 				</nav>

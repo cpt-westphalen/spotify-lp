@@ -1,0 +1,27 @@
+.carousel-section-bg{
+    background-image: linear-gradient(90deg, var(--light-highlight),var(--dark-highlight));
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 640px;
+}
+
+.carousel-container section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    height: 600px;
+}
+
+.carousel-container h1 {
+    color: white;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 3rem;
+    letter-spacing: -2px;
+}

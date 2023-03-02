@@ -5,6 +5,8 @@
 
   --primary-foreground: #242424;
   --primary-background: #FFF;
+  --light-highlight: #e87ae3;
+  --dark-highlight: #b760fc;
 
   /* color-scheme: light dark; */
   color: var(--primary-foreground);

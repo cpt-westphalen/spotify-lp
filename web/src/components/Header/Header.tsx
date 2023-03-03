@@ -11,12 +11,12 @@ export const Header = ({ links }: { links: link[] }) => {
 			<header
 				id='top'
 				className='header'>
-				<div className=''>
+				<a href='#'>
 					<img
 						className='logo'
 						src={spotify}
 					/>
-				</div>
+				</a>
 				<nav className='header-links'>
 					{links.map((link, index) =>
 						links.length - 1 !== index ? (

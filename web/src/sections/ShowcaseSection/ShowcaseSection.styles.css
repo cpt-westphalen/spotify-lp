@@ -43,14 +43,20 @@
 }
 
 .showcase-section > .images {
-    margin-top: -3rem;
+    margin-top: -5rem;
     pointer-events: none;
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
     transform: rotateZ(12deg);
+    translate: 0 0%;
     padding: 0 4rem;
+    transition: translate 3s ease-in-out;
+}
+
+.images.slide-down {
+    translate: 0 3%;
 }
 
 .showcase-section > .images > img {

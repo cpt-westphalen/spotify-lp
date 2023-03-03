@@ -1,9 +1,37 @@
+import { useEffect, useRef } from "react";
 import appShowcase from "../../assets/iphone1.png";
 import appShowcase2 from "../../assets/iphone2.png";
 
 import "./ShowcaseSection.styles.css";
 
 export const ShowcaseSection = () => {
+	const imgsRef = useRef<HTMLImageElement>(null);
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries, _) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("slide-down");
+					} else {
+						entry.target.classList.remove("slide-down");
+					}
+				});
+			},
+			{
+				root: null,
+				rootMargin: "0px",
+				threshold: 0.2,
+			}
+		);
+		if (imgsRef.current) {
+			observer.observe(imgsRef.current);
+		}
+		return () => {
+			if (imgsRef.current) observer.unobserve(imgsRef.current);
+		};
+	}, []);
+
 	return (
 		<div className='full-width grid-container theme-bg'>
 			<section className='showcase-section'>
@@ -30,7 +58,9 @@ export const ShowcaseSection = () => {
 						</p>
 					</article>
 				</div>
-				<div className='images'>
+				<div
+					className='images'
+					ref={imgsRef}>
 					<img
 						loading='lazy'
 						src={appShowcase}

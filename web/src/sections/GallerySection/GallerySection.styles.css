@@ -1,7 +1,7 @@
 .gallery-section {
     position: relative;
     overflow: visible;
-    padding: 5rem 0;
+    padding: 8rem 0;
 }
 
 .gallery {
@@ -71,7 +71,7 @@
 }
 
 .gallery-article p {
-    font-size: 1.25rem;
+    font-size: var(--font-medium);
 }
 
 .gallery-article > .centered {

@@ -1,0 +1,72 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    --primary-foreground: #242424;
+    --primary-background: #FFF;
+    --light-highlight: #e87ae3;
+    --highlight: #b760fc;
+    --dark-highlight: #722bef;
+
+    --font-medium: 1.25rem;
+
+    /* color-scheme: light dark; */
+    color: var(--primary-foreground);
+    background-color: var(--primary-background);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-foreground: #EDEDED;
+    --primary-background: #242424;
+  }
+} */
+
+html {
+    overscroll-behavior: none;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+.theme-bg {
+    background-image: url('../assets/capa.png'), linear-gradient(90deg, var(--light-highlight), var(--highlight));
+    background-color: var(--highlight);
+    background-repeat: repeat;
+    background-blend-mode: soft-light, normal;
+    overflow: visible;
+}
+
+.app {
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr min(1440px, 96%) 1fr;
+}
+
+.grid-container>* {
+    grid-column: 2;
+}
+
+.full-width {
+    grid-column: -1/1;
+}

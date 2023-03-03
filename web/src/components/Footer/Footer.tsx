@@ -1,8 +1,10 @@
 import spotify from "../../assets/spotify.svg";
 
+import "./Footer.styles.css";
+
 export const Footer = () => {
 	return (
-		<footer>
+		<footer className='full-width grid-container'>
 			<nav>
 				<img src={spotify} />
 				<div>[coluna 1]</div>

@@ -4,7 +4,7 @@
     flex-wrap: wrap-reverse;
     min-height: max(640px, 70vh);
     width: 100%;
-
+    padding: 2rem 0;
 }
 
 .showcase-section > .article-container {

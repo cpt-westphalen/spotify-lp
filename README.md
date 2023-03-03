@@ -13,6 +13,16 @@
 
 Prazo: 4 dias.
 
+### Como rodar o projeto?
+
+Requisitos: `NPM`
+
+1. Clone o repositório
+2. No terminal, acesse `/web`
+3. Execute `npm install` no terminal
+4. Ao terminar a instalação das dependências, execute `npm run dev` para o servidor de desenvolvimento
+5. Para ter os arquivos de produção, execute `npm run build` (output: /web/dist)
+
 ### Stack
 
 -   Vite

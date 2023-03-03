@@ -30,7 +30,7 @@ export const CarouselSection = () => {
 		);
 	}
 	return (
-		<section className='full-width grid-container carousel-section-bg'>
+		<section className='full-width grid-container theme-bg'>
 			<div className='carousel-container'>
 				<Carousel
 					autoPlay

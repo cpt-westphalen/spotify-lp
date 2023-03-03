@@ -65,3 +65,37 @@
 .carousel-arrow:active {
     opacity: .3;
 }
+
+.carousel-container .cta-button {
+    width: max(25%, 120px);
+    height: 52px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--primary-background);
+    border-radius: 28px;
+    background: none;
+    margin: 0 1rem;
+    border: 2px solid var(--primary-background);
+    cursor: pointer;
+    transition: box-shadow 200ms ease-out, transform 150ms ease-in-out;
+    box-shadow: 0 0 16px 2px transparent;
+}
+
+.carousel-container .cta-button:hover {
+    box-shadow: 0 0 16px 2px white;
+    transform: scale(102%);
+}
+
+.carousel-container .cta-button.highlight {
+    border-color: transparent;
+    background-color: var(--dark-highlight);
+}
+
+.carousel-container .cta-button.highlight:hover {
+    box-shadow: 0 0 16px 6px var(--highlight);
+}
+
+.carousel-container .cta-button.icon > *:first-child {
+    margin: 0 1rem 0 -1rem;
+}

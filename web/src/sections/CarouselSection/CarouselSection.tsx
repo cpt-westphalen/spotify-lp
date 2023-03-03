@@ -46,14 +46,18 @@ export const CarouselSection = () => {
 					<section>
 						<div>
 							<h1>Música para todos</h1>
-							<button>Aproveite o Spotify Free</button>
-							<button>Obter o Spotify Premium</button>
+							<button className='cta-button highlight'>
+								Aproveite o Spotify Free
+							</button>
+							<button className='cta-button'>
+								Obter o Spotify Premium
+							</button>
 						</div>
 					</section>
 					<section>
 						<div>
 							<h1>As melhores rádios</h1>
-							<button>
+							<button className='cta-button icon'>
 								<FaMusic />
 								Ouça agora
 							</button>

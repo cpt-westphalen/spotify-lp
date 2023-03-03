@@ -40,6 +40,7 @@ export const CarouselSection = () => {
 					ariaLabel='Banner do Site'
 					showThumbs={false}
 					showStatus={false}
+					stopOnHover={false}
 					interval={5000}
 					renderArrowNext={renderArrowNext}
 					renderArrowPrev={renderArrowPrev}>

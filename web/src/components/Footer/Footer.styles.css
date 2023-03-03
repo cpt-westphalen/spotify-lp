@@ -27,6 +27,10 @@ footer a {
     font-weight: 500;
 }
 
+footer a:hover {
+    opacity: .8;
+}
+
 footer h6 {
     font-size: 1.2rem;
     font-weight: 800;

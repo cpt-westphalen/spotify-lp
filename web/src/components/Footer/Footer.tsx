@@ -11,10 +11,12 @@ export const Footer = () => {
 		<footer className='full-width grid-container'>
 			<nav>
 				<div className='logo-container'>
-					<img
-						className='logo'
-						src={spotify}
-					/>
+					<a href='#top'>
+						<img
+							className='logo'
+							src={spotify}
+						/>
+					</a>
 				</div>
 				<ul
 					aria-label='links diversos'
@@ -71,13 +73,19 @@ export const Footer = () => {
 					className='footer-social-media'
 					aria-label='Redes sociais'>
 					<li>
-						<img src={socialMediaIcon1} />
+						<a href='#'>
+							<img src={socialMediaIcon1} />
+						</a>
 					</li>
 					<li>
-						<img src={socialMediaIcon2} />
+						<a href='#'>
+							<img src={socialMediaIcon2} />
+						</a>
 					</li>
 					<li>
-						<img src={socialMediaIcon3} />
+						<a href='#'>
+							<img src={socialMediaIcon3} />
+						</a>
 					</li>
 				</ul>
 			</nav>

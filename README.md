@@ -31,11 +31,11 @@ Requisitos: `NPM`
 
 ### Expectativa
 
-[ imagem ]
+![Layout do Desafio](https://user-images.githubusercontent.com/97403327/222931238-724b7b06-5656-434f-af1e-69d18a988795.png)
 
 ### Final
 
-[ imagens ]
+![Resultado](https://user-images.githubusercontent.com/97403327/222931343-235bdd8a-0ae8-4fef-b1d8-3ba624d73256.png)
 
 #### Destaques
 
